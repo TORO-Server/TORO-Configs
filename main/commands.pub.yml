@@ -1,0 +1,32 @@
+command-block-overrides: []
+ignore-vanilla-permissions: false
+aliases:
+  spawn:
+  - warp spawn
+  sunday:
+  - sun
+  - day
+  em:
+  - effectgui
+  hogo:
+  - rg claim $$1-
+  col:
+  - cp namecolor
+  namecolor:
+  - cp namecolor
+  colsup:
+  - cp namecolorsup
+  colmod:
+  - cp namecolormod
+  coladmin:
+  - cp namecoloradmin
+  colowner:
+  - cp namecolorowner
+  stats:
+  - cp stats
+  rename:
+  - iname $$1-
+  relore:
+  - ilore $$1-
+  roruba:
+  - co rb $$1 time:$$2 radius:#global
