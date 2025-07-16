@@ -1,0 +1,10 @@
+lore:
+  - "§aTimer Start/Stop: Use Button"
+  - "§aTimer Reset: Attack Button"
+message:
+  start: "§bStart"
+  stop: "§cStop §f[§6%s§f]"
+  restart: "§aRestart §f[§6%s§f]"
+  reset: "§dReset §f[§6%s§f]"
+  copy: "§6Copy time to clipboard"
+  timer: "%01d:%02d:%02d.%02d"
