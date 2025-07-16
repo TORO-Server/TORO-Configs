@@ -1,0 +1,14 @@
+URL: "[[BANPLAYERSHEET:API_URL]]"
+
+Message:
+  BanReason: "BAN 理由"
+  Kick: "あなたは共有BANされています。"
+  ErrorDatabase: "データベースにアクセスできませんでした。"
+  sBan: "/sban [プレイヤー名] [BAN理由]"
+  unsBan: "/unsban [プレイヤー名]"
+  PlayerNotFound: "プレイヤーは見つかりませんでした。"
+
+  addBAN: "プレイヤーを共有BANしました。"
+  rmvBAN: "プレイヤーの共有BANを解除しました。"
+  alreadyBAN: "プレイヤーは既に共有BANされています。"
+  notBAN: "プレイヤーは共有BANされていません。"
