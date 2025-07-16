@@ -8,6 +8,10 @@
 # 最上位のディレクトリのファイルは 無視対象から除外
 !/*
 
+!src/*
+
+*.exe
+
 nimcache/
 nimblecache/
 htmldocs/
