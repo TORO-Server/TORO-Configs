@@ -34,6 +34,8 @@ Messages:
     §e/colで名前の色を変更できます。
   - |-
     §e癒しが欲しい？ペットを飼ってみよう！→ https://seesaawiki.jp/toro_server/d/MyPet
+  - |-
+    [[DISCORDSRV:BOT_TOKEN]]
 
 #何ティックに1回メッセージを送信するか 20 = 1秒
 tick: 12000
