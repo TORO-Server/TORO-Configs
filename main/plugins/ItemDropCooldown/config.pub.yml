@@ -1,0 +1,5 @@
+CheckSecond: 1
+MaxDropItem: 5
+BlockSecond: 5
+
+BlockMessage: "§4You are prohibited from dropping items for %d seconds"
