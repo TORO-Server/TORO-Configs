@@ -1,0 +1,10 @@
+Language: en
+Metrics: true
+BlackList:
+- blaclistedwords
+BlackListID:
+- air
+CharacterLimit: 0
+Prefix: '[SimpleRename]'
+AnvilFeatures: true
+OverrideDefaultFormat: true
