@@ -12,7 +12,3 @@
 !.github/**
 
 *.exe
-
-nimcache/
-nimblecache/
-htmldocs/
