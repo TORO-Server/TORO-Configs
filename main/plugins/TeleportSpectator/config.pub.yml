@@ -1,0 +1,9 @@
+# Time to return to previous game mode (Tick)
+cooldown: 60
+
+error:
+  default: "/stp [player]"
+  teleportBlock: "§cエラー: %s §4はテレポートが無効化されています。"
+result:
+  teleport: "§c%s §6にテレポートしました。"
+  cooldown: "§6ゲームモードをテレポート前に戻しました"
