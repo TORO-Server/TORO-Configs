@@ -19,7 +19,7 @@ proc processFile(filePath: string, rep_rule: seq[(string, string)]) {.async.} =
       # ファイル内容 置換
       content = content.multiReplace(rep_rule)
       # 新しいファイル名(".pub" を削除) 生成
-      let newFilename = filename.replace(re(r"\.pub\.*"), "")
+      let newFilename = filename.replace(re(r"\.pub\.*"), r".")
       let newFilePath = dirPath / newFilename
       # 置換後のファイル内容 書き込み
       writeFile(newFilePath, content)
