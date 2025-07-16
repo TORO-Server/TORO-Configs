@@ -1,0 +1,44 @@
+#定期的に送信するメッセージ
+Messages:
+  - |-
+    §eTips : TOROサーバーのマップはこちら→ http://torosaba.net:60016/
+  - |-
+    §eWorldEditや乗り物の利用には申請が必要です。
+    TORO SERVER公式wiki→ https://seesaawiki.jp/toro_server
+  - |-
+    §eTOROサーバーの公式Twitterアカウントはこちら
+    https://twitter.com/ToroServer
+  - |-
+    §e使い終わった乗り物は片付けましょう。
+  - |-
+    §e乗り物が片付けられなくなった場合はすぐに運営に報告しましょう。
+  - |-
+    §eおもなコマンド説明→ https://seesaawiki.jp/toro_server/d/%a5%b3%a5%de%a5%f3%a5%c9%bd%b8
+  - |-
+    §eWorldEditで間違えたときはすぐに「//undo」しましょう！
+  - |-
+    §e/dayで時間を朝に、「/sun」で天気を晴れに変えられます
+  - |-
+    §e/speed 4などで移動速度を変えてみましょう
+  - |-
+    §e毎日1回投票でTORO SERVERをもっと盛り上げよう！→ https://minecraft.jp/servers/5bd3caeaa9b0bd41d200834f/vote
+  - |-
+    §e保護機能を使って自分の建築物を守ろう！→ https://seesaawiki.jp/toro_server/d/WorldGuard
+  - |-
+    §eWorldEditの解説はこちら→ https://seesaawiki.jp/toro_server/d/WorldEdit
+  - |-
+    §e荒らし行為や迷惑行為は自分だけで解決しようとせずに、すぐに運営に報告してください！
+  - |-
+    §e空き地が見つからない？「/warp kanso_town」で第二フリー建築エリア「乾燥街」に行こう！
+  - |-
+    §e/colで名前の色を変更できます。
+  - |-
+    §e癒しが欲しい？ペットを飼ってみよう！→ https://seesaawiki.jp/toro_server/d/MyPet
+
+#何ティックに1回メッセージを送信するか 20 = 1秒
+tick: 12000
+
+#設定したメッセージすべてが送信されるまで
+#今まで送信したメッセージが送信されないかどうか
+# true = すべて送信するまで今までのメッセージは送信しない
+AllSendMessage: true
