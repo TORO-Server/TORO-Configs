@@ -1,0 +1,156 @@
+# |------------------------------------------------------------------------
+# |                       CommandPanels Template File
+# |                            By RockyHawk v1.1
+# | https://www.spigotmc.org/resources/command-panels-custom-guis.67788/
+# |------------------------------------------------------------------------
+panels:
+  namecolor:
+    perm: default
+    rows: 2
+    title: '&8&n変更したい色をクリックしてください'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: BLACK_CONCRETE
+        stack: 1
+        name: '&0&lBLACK&f(BLACK)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&0
+          - msg= 黒色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '1':
+        material: BLUE_CONCRETE
+        stack: 1
+        name: '&1&lDARK BLUE&f(DARK BLUE)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&1
+          - msg= 藍色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '2':
+        material: GREEN_CONCRETE
+        stack: 1
+        name: '&2&lDARK GREEN&f(DARK GREEN)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&2
+          - msg= 緑色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '3':
+        material: CYAN_CONCRETE
+        stack: 1
+        name: '&3&lDARK AQUA&f(DARK CYAN)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&3
+          - msg= 青緑色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '4':
+        material: RED_CONCRETE
+        stack: 1
+        name: '&4&lDARK RED&f(DARK RED)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&4
+          - msg= 紅色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '5':
+        material: PURPLE_CONCRETE
+        stack: 1
+        name: '&5&lDARK PURPLE&f(DARK PURPLE)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&5
+          - msg= 紫色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '6':
+        material: ORANGE_CONCRETE
+        stack: 1
+        name: '&6&lGOLD&f(GOLD)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&6
+          - msg= 橙色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '7':
+        material: LIGHT_GRAY_CONCRETE
+        stack: 1
+        name: '&7&lGRAY&f(GRAY)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&7
+          - msg= 薄灰色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '8':
+        material: GRAY_CONCRETE
+        stack: 1
+        name: '&8&lDARK GRAY&f(DARK GRAY)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&8
+          - msg= 灰色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '9':
+        material: TUBE_CORAL_BLOCK
+        stack: 1
+        name: '&9&lBLUE&f(BLUE)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&9
+          - msg= 青色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '10':
+        material: LIME_CONCRETE
+        stack: 1
+        name: '&a&lGREEN&f(GREEN)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&a
+          - msg= 黄緑色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '11':
+        material: LIGHT_BLUE_CONCRETE
+        stack: 1
+        name: '&b&lAQUA&f(AQUA)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&b
+          - msg= 空色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '12':
+        material: FIRE_CORAL_BLOCK
+        stack: 1
+        name: '&c&lRED&f(RED)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&c
+          - msg= 赤色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '13':
+        material: PINK_CONCRETE
+        stack: 1
+        name: '&d&lLIGHT PURPLE&f(LIGHT PURPLE)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&d
+          - msg= 桃色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '14':
+        material: YELLOW_CONCRETE
+        stack: 1
+        name: '&e&lYELLOW&f(YELLOW)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&e
+          - msg= 黄色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%
+      '15':
+        material: WHITE_CONCRETE
+        stack: 1
+        name: '&f&lWHITE&f(WHITE)'
+        commands:
+          - console= lp user %cp-player-name% meta removeprefix 0
+          - console= lp user %cp-player-name% permission set prefix.0.&f
+          - msg= 白色に変更しました。
+          - console= playsound minecraft:block.note_block.pling master %cp-player-name%

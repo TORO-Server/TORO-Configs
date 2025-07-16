@@ -1,0 +1,78 @@
+# |------------------------------------------------------------------------
+# |                       CommandPanels Template File
+# |                            By RockyHawk v1.1
+# | https://www.spigotmc.org/resources/command-panels-custom-guis.67788/
+# |------------------------------------------------------------------------
+panels:
+  stats:
+    perm: default
+    rows: 2
+    title: GAME STATS
+    empty: GRAY_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: CLOCK
+        stack: 1
+        name: '&r&bプレイ時間&a:&f %statistic_time_played:days%日%statistic_time_played:hours%時間%statistic_time_played:minutes%分%statistic_time_played:seconds%秒'
+        commands:
+      '1':
+        material: DIAMOND_BOOTS
+        stack: 1
+        name: '&r&b歩行距離&a:&f %math_{statistic_walk_one_cm}/100%m'
+        commands:
+      '2':
+        material: IRON_BOOTS
+        stack: 1
+        name: '&r&b跳躍数&a:&f %statistic_jump%回'
+        commands:
+      '3':
+        material: FEATHER
+        stack: 1
+        name: '&r&b飛行距離&a:&f %math_{statistic_fly_one_cm}/100%m'
+        commands:
+      '4':
+        material: MINECART
+        stack: 1
+        name: '&r&b走行距離&a:&f %math_{statistic_minecart_one_cm}/100%m'
+        commands:
+      '5':
+        material: GOLDEN_SWORD
+        stack: 1
+        name: '&r&bmobキル数&a:&f %statistic_mob_kills%体'
+        commands:
+      '6':
+        material: BONE
+        stack: 1
+        name: '&r&b死亡数&a:&f %statistic_deaths%回'
+        commands:
+      '9':
+        material: OAK_SIGN
+        stack: 1
+        name: '&r&b初ログイン日時&a:&f %player_first_join_date%'
+        commands:
+      '10':
+        material: COMPASS
+        stack: 1
+        name: '&r&b現在地のワールド&a:&f %player_compass_world%'
+        commands:
+      '11':
+        material: LEAD
+        stack: 1
+        name: '&r&bping&a:&f %player_ping%'
+        commands:
+      '12':
+        material: NAME_TAG
+        stack: 1
+        name: '&r&bあなたのUUID&a:&f %player_uuid%'
+        commands:
+      '13':
+        material: WOODEN_AXE
+        stack: 1
+        name: '&r&b現在地の保護名&a:&f %worldguard_region_name%'
+        commands:
+      '17':
+        material: BARRIER
+        stack: 1
+        name: '&r&c&l画面を閉じる'
+        commands:
+          - cpc

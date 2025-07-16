@@ -1,0 +1,39 @@
+panels:
+  wggui:
+    perm: admin
+    rows: 5
+    title: '&6&lWorldGuard GUI'
+    empty: GREEN_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: LIGHT_GRAY_WOOL
+        stack: 1
+        name: 'passthrough（未設定）'
+        lore:
+          - '全ての行動の許可について'
+          - 'デフォルト設定:未設定'
+        commands:
+          - rg flag %worldguard_region_name% passthrough allow
+          - refresh
+        has0:
+          value0: 'passthrough=allow'
+          compare0: '%worldguard_region_flags%'
+          material: LIME_WOOL
+          name: 'passthrough（&a許可&r）'
+          lore:
+            - '全ての行動の許可について'
+            - 'デフォルト設定:未設定'
+          commands:
+            - rg flag %worldguard_region_name% passthrough deny
+            - refresh
+        has1:
+          value1: 'passthrough=deny'
+          compare1: '%worldguard_region_flags%'
+          material: RED_WOOL
+          name: 'passthrough（&c拒否&r）'
+          lore:
+            - '全ての行動の許可について'
+            - 'デフォルト設定:未設定'
+          commands:
+            - rg flag %worldguard_region_name% passthrough
+            - refresh
