@@ -1,0 +1,84 @@
+#✦------------------------------------------------------✦
+#|                      Main Config                     |
+#✦------------------------------------------------------✦
+#RealScoreboard created by JoseGamerPT and maintained by Neziw
+#
+#Useful links:
+#SpigotMC - https://www.spigotmc.org/resources/realscoreboard-1-13-to-1-19-2.22928/
+#Discord Server - https://discord.gg/t7gfnYZKy8
+#bStats - https://bstats.org/plugin/bukkit/RealScoreboard/10080
+#HEX Color Formats: https://github.com/Iridium-Development/IridiumColorAPI
+#API for Developers: https://github.com/JoseGamerPT/RealScoreboard/blob/master/api.md
+Debug: false
+Config:
+  ItemAdder-Support: false
+  mcMMO-Support: false
+  Check-for-Updates: true
+  Prefix: "&bReal&9Scoreboard &7| &r"
+  Reloaded: "&fThe config has been &areloaded&f."
+  Use-Placeholders-In-Scoreboard-Titles: false
+  RealScoreboard-Disabled-By-Default: false
+  Auto-Hide-In-Vanish: true
+  Hours:
+    Formatting: HH:mm:ss
+    Offset: 0
+  Messages:
+    Scoreboard-Toggle:
+      ON: "&fScoreboard turned &aON&f."
+      OFF: "&fScoreboard turned &cOFF&f."
+  Animations:
+    Title-Delay: 10
+    Loop-Delay: 20
+  Scoreboard-Refresh: 10
+  Disabled-Worlds:
+    - testworld
+  Bypass-Worlds:
+    - testworld2
+  Scoreboard:
+    world:
+      default:
+        Switch-Timer: 10
+        Boards:
+          Board1:
+            Title:
+              - "&fT&8ORO &7server"
+            Lines:
+              - '&f\ &7TPS %server_tps_1% / 20'
+              - "&7Region: %worldguard_region_name%"
+              - "&7Ping: %ping%"
+          Board2:
+            Title:
+              - "&8T&fO&8RO &7server"
+            Lines:
+              - "&f/ &7TPS %server_tps_1% / 20"
+              - "&7Region: %worldguard_region_name%"
+              - "&7Ping: %ping%"
+          Board3:
+            Title:
+              - "&8TO&fR&8O &7server"
+            Lines:
+              - "&f- &7TPS %server_tps_1% / 20"
+              - "&7Region: %worldguard_region_name%"
+              - "&7Ping: %ping%"
+          Board4:
+            Title:
+              - "&8TOR&fO &7server"
+            Lines:
+              - '&f\ &7TPS %server_tps_1% / 20'
+              - "&7Region: %worldguard_region_name%"
+              - "&7Ping: %ping%"
+          Board5:
+            Title:
+              - "&8TORO &7server"
+            Lines:
+              - "&f/ &7TPS %server_tps_1% / 20"
+              - "&7Region: %worldguard_region_name%"
+              - "&7Ping: %ping%"
+          Board6:
+            Title:
+              - "&8TORO &7server"
+            Lines:
+              - "&f- &7TPS %server_tps_1% / 20"
+              - "&7Region: %worldguard_region_name%"
+              - "&7Ping: %ping%"
+Version: "15"
