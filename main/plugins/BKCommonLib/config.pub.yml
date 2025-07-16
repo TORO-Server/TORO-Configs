@@ -1,0 +1,56 @@
+#> This is the main configuration file of BKCommonLib
+#> Normally you should not have to make changes to this file
+#> Unused components of the library can be disabled to improve performance
+#> By default all components and features are enabled
+
+# Whether the Map Display engine is enabled, running in the background to refresh and render maps
+# When enabled, the map item tracking may impose a slight overhead
+# If no plugin is using map displays, then this can be safely disabled to improve performance
+enableMapDisplays: true
+
+# Whether all item frames on the server are tracked to see if they display a map display.
+# This allows for map displays to be displayed on item frames and interacted with.
+# If 'enableItemFrameTiling' is also true, then this allows for multi-item frame displays.
+# Tracking the existence of all item frames on the server can pose an overhead, as
+# shown under the 'MapDisplayFramedMapUpdater' task. Turning this off can help performance.
+# If 'enableMapDisplays' is true then player-held maps will continue working fine.
+enableItemFrameDisplays: true
+
+# Whether multiple item frames next to each other can merge to show one large display
+# This allows Map Displays to be displayed on multiple item frames at a larger resolution
+# The tiling detection logic poses some overhead on the server, and if unused, can be disabled
+enableItemFrameTiling: true
+
+# Whether to teleport players to their supposed seat while they hold the sneak button
+# This is used on Minecraft 1.16 and later to make sure players stay near their seat,
+# when exiting the seat was cancelled.
+teleportPlayersToSeat: true
+
+# Whether to force saving to be done synchronously, rather than asynchronously
+# If the Asynchronous File I/O in the JVM has a glitch in it, it might cause very large
+# corrupt (.yml) files to be generated. On server restart this can cause a loss of data.
+# Synchronous saving (such as YAML) may hurt server performance for large files,
+# but will prevent these issues from happening.
+forceSynchronousSaving: false
+
+# Whether to instrument additional Timings for some of the core BKCommonLib components
+# These timings might be useful to identify performance problems, or their causes
+# They may cause a slight performance hit, so leave this option disabled unless you need them
+debugTimings: false
+
+# Whether to disable using brigadier for all plugins that use BKCL's cloud command framework
+# This might fix problems that occur because of bugs in brigadier, or cloud's handler of it
+cloudDisableBrigadier: false
+
+# Whether to load and initialize ALL template classes when BKCommonLib first loads up.
+# This reveals any at-runtime server incompatibility errors early on and eliminates any
+# at-runtime lazy initialization lag. It does cause a lot of classes to be loaded into the
+# JVM that may never get used, which wastes memory. Only enable this for debugging reasons!
+# As loading is done on all CPU cores, this might improve boot performance on multi-core systems
+preloadTemplateClasses: false
+
+# Whether to track the stack trace of where forced chunks are created
+# This is useful to detect ForcedChunk instances that are not closed by the developer.
+# Once a missed close is detected, tracking is automatically started anyway.
+# As such, this option is primarily useful to diagnose this problem at server startup
+trackForcedChunkCreationStack: false
