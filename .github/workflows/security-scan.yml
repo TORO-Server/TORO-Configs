@@ -1,0 +1,72 @@
+name: Suspicious Pattern Scan
+
+# ワークフローが実行されるトリガーを設定
+on:
+  # mainブランチへのプッシュ（コミット）時に実行
+  push:
+    branches:
+      - main
+  # プルリクエストの作成、更新、再開時に実行
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  scan-files:
+    # 実行環境として最新のUbuntuを使用
+    runs-on: ubuntu-latest
+    steps:
+      # 1. リポジトリのコードをチェックアウト
+      # git diff を実行するために全履歴を取得 (fetch-depth: 0)
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. 変更があったファイルの一覧を取得
+      # tj-actions/changed-files アクションを利用して、追加・変更されたファイル名を取得
+      - name: Get Changed Files
+        id: changed_files
+        uses: tj-actions/changed-files@v44
+
+      # 3. 変更されたファイルの内容をスキャン
+      - name: Scan Files for Suspicious Pattern
+        run: |
+          # 追加・変更されたファイルのリストを変数に格納
+          # 削除されたファイルは対象外
+          files_to_scan="${{ steps.changed_files.outputs.added_files }} ${{ steps.changed_files.outputs.modified_files }}"
+
+          # 変更されたファイルがない場合はスクリプトを正常終了
+          if [ -z "$files_to_scan" ]; then
+            echo "スキャン対象の変更ファイルはありませんでした。"
+            exit 0
+          fi
+
+          echo "以下の変更ファイルをスキャンします:"
+          echo "$files_to_scan"
+
+          # 疑わしいパターンが見つかったかどうかのフラグ
+          error_found=false
+
+          # 各ファイルをループしてチェック
+          for file in $files_to_scan; do
+            # ファイルが存在し、通常のファイルであることを確認
+            if [ ! -f "$file" ]; then
+              continue
+            fi
+
+            # grepコマンドで正規表現 "[[.*]]" にマッチするかチェック
+            # -q オプション: マッチしても結果を出力せず、終了コードでのみ結果を返す
+            # '\[\[.*]]' は正規表現の特殊文字 '[' と ']' をエスケープしたもの
+            if grep -q '\[\[.*]]' "$file"; then
+              # GitHubのUI上にエラーメッセージを注釈として表示
+              echo "::error file=$file::バックドアが組み込まれる可能性のあるファイルです。注意してください。"
+              error_found=true
+            fi
+          done
+
+          # 疑わしいパターンが見つかった場合は、終了コード1でワークフローを失敗させる
+          if [ "$error_found" = true ]; then
+            exit 1
+          fi
+
+          echo "不審なパターンは検出されませんでした。"
