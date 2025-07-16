@@ -1,0 +1,26 @@
+playSound:
+  lore:
+    sound: "サウンド "
+    volume: "音量 "
+    pitch: "ピッチ "
+    category: "カテゴリ "
+  warnText:
+    NotEnoughSettings: "§6設定項目が足りません"
+    ExceedingMaxVolume: "§6最大の音量を超えています"
+    ExceedingMaxPitch: "§6最大のピッチを超えています"
+  maxVolume: 2
+  maxPitch: 3
+
+stopSound:
+  lore:
+    sound: "サウンド "
+    distance: "距離 "
+    category: "カテゴリ "
+  warnText:
+    NotEnoughSettings: "§6設定項目が足りません"
+    ExceedingMaxDistance: "§6最大の距離を超えています"
+  maxDistance: 32
+
+sendMessage:
+  lore:
+    text: "%d行目: "
