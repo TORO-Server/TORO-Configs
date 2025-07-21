@@ -1,4 +1,9 @@
 #!/bin/bash
 cd $(dirname $0)
 
-docker run --rm -it $(docker build -t toro-configs)
+git fetch origin main
+git reset --hard origin/main
+
+docker compose pull
+docker compose up
+docker compose down
