@@ -1,4 +1,4 @@
-URL: "[[BANPLAYERSHEET:API_URL]]"
+URL: "[[BANPLAYERSHEET_API_URL]]"
 
 Message:
   BanReason: "BAN 理由"

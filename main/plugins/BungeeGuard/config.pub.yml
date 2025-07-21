@@ -2,7 +2,7 @@
 
 # Allowed authentication tokens.
 allowed-tokens:
-  - "[[BUNGEEGUARD:ALLOWED_TOKENS]]"
+  - "[[BUNGEEGUARD_ALLOWED_TOKENS]]"
 
 
 # Messages
