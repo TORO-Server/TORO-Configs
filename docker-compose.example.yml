@@ -1,8 +1,0 @@
-services:
-  main:
-    image: ghcr.io/toro-server/toro-configs-enforcer:latest
-    container_name: toro-configs-main
-    env_file:
-      - .env
-    volumes:
-      - ./main:/app/main
