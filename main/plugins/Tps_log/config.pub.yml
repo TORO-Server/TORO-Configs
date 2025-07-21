@@ -17,7 +17,7 @@ MaxTPS: 20
 WarnTPS: 18
 
 #Discord Webhook
-WebhookURL: "[[TPSLOG:DISCORD_WEBHOOK]]"
+WebhookURL: "[[TPSLOG_DISCORD_WEBHOOK]]"
 #Discord Embed Color
 EmbedColor: 12915218
 Discord: true
