@@ -12,3 +12,6 @@
 !.github/**
 
 .env
+
+# カスタム武器を無視対象から除外
+!main/plugins/CrackShot/weapons/*

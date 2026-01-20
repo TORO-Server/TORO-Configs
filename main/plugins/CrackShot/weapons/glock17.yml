@@ -1,0 +1,24 @@
+Glock17:
+  Item_Information:
+    Item_Name: "&eGlock 17"
+    Item_Type: 417
+    Sounds_Acquired: BAT_TAKEOFF-1-1-0
+  Shooting:
+    Right_Click_To_Shoot: true
+    Cancel_Left_Click_Block_Damage: true
+    Cancel_Right_Click_Interactions: true
+    Recoil_Amount: 1
+    Projectile_Amount: 1
+    Projectile_Type: snowball
+    Projectile_Speed: 40
+    Projectile_Damage: 3
+    Sounds_Shoot: WITHER_SHOOT-1-2-0,EXPLODE-1-2-0
+  Fully_Automatic:
+    Enable: true
+    Fire_Rate: 4
+  Reload:
+    Enable: true
+    Reload_Amount: 18
+    Reload_Duration: 60
+    Sounds_Reloading: DOOR_OPEN-1-2-6
+    
