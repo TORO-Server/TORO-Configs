@@ -3,6 +3,7 @@ Glock17:
     Item_Name: "&eGlock 17"
     Item_Type: 417
     Sounds_Acquired: BAT_TAKEOFF-1-1-0
+    Custom_Model_Data: 19
   Shooting:
     Right_Click_To_Shoot: true
     Cancel_Left_Click_Block_Damage: true
@@ -16,6 +17,9 @@ Glock17:
   Fully_Automatic:
     Enable: true
     Fire_Rate: 4
+  Headshot:
+    Enable: true
+    Bonus_Damage: 7
   Reload:
     Enable: true
     Reload_Amount: 18
