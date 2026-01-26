@@ -11,11 +11,14 @@ Glock17:
     Projectile_Amount: 1
     Projectile_Type: snowball
     Projectile_Speed: 40
-    Projectile_Damage: 3
+    Projectile_Damage: 5
     Sounds_Shoot: WITHER_SHOOT-1-2-0,EXPLODE-1-2-0
   Fully_Automatic:
     Enable: true
     Fire_Rate: 4
+  Headshot:
+    Enable: true
+    Bonus_Damage: 5
   Reload:
     Enable: true
     Reload_Amount: 18
