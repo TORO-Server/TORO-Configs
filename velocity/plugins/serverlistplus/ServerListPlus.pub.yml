@@ -193,7 +193,7 @@ Hosts:
             - toro-inverse.png
             - toro-inverse.png
             - minuma-nose.png
-            - lgbtoro.pub.png
+            - lgbtoro.png
       Version:
         Name:
         - '1.12.2-1.20.4'
@@ -256,6 +256,37 @@ Hosts:
       Favicon:
           Files:
             - minuma-nose.png
+      Version:
+        Name:
+        - '0.0.0-9.99.9'
+  lgb.torosaba.net:
+    Default:
+      Description:
+      - |-
+        &6&l L&e&l G&a&l B&b&l T&d&l O&5&l R&c&l O&f&l !!
+        %gradient#ff0000#ff7f00#ffff00#00ff00#0000ff#8b00ff% アイコンが虹色になるだけです..%gradient%
+      Players:
+        Hover:
+        - |-
+          &b%online%/ %max%
+      Favicon:
+        Files:
+            - lgbtoro.png
+      Version:
+        Name:
+        - '0.0.0-9.99.9'
+    Personalized:
+      Description:
+      - |-
+        &6&l L&e&l G&a&l B&b&l T&d&l O&5&l R&c&l O&f&l !! %player%
+        %gradient#ff0000#ff7f00#ffff00#00ff00#0000ff#8b00ff% アイコンが虹色になるだけです..%gradient%
+      Players:
+        Hover:
+        - |-
+            &b%online%/ %max%
+      Favicon:
+          Files:
+            - lgbtoro.png
       Version:
         Name:
         - '0.0.0-9.99.9'
