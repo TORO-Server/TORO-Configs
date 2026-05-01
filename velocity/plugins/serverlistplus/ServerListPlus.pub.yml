@@ -194,6 +194,8 @@ Hosts:
             - toro-inverse.png
             - minuma-nose.png
             - lgbtoro.png
+            - doro.png
+            - toto.png
       Version:
         Name:
         - '1.12.2-1.20.4'
@@ -287,6 +289,68 @@ Hosts:
       Favicon:
           Files:
             - lgbtoro.png
+      Version:
+        Name:
+        - '0.0.0-9.99.9'
+  doro.torosaba.net:
+    Default:
+      Description:
+      - |-
+        &f&l DORO!!
+        %gradient#7b5542#4e342e% アイコンがどろになるだけです..%gradient%
+      Players:
+        Hover:
+        - |-
+          &b%online%/ %max%
+      Favicon:
+        Files:
+            - doro.png
+      Version:
+        Name:
+        - '0.0.0-9.99.9'
+    Personalized:
+      Description:
+      - |-
+        &f&l DORO!! %player%
+        %gradient#7b5542#4e342e% アイコンがどろになるだけです..%gradient%
+      Players:
+        Hover:
+        - |-
+            &b%online%/ %max%
+      Favicon:
+          Files:
+            - doro.png
+      Version:
+        Name:
+        - '0.0.0-9.99.9'
+  toto.torosaba.net:
+    Default:
+      Description:
+      - |-
+        &f&l TOTO!!
+        %gradient#ffffff#e0e0e0#9e9e9e% アイコンがTOTOになるだけです..%gradient%
+      Players:
+        Hover:
+        - |-
+          &b%online%/ %max%
+      Favicon:
+        Files:
+            - toto.png
+      Version:
+        Name:
+        - '0.0.0-9.99.9'
+    Personalized:
+      Description:
+      - |-
+        &f&l TOTO!! %player%
+        %gradient#ffffff#e0e0e0#9e9e9e% アイコンがTOTOになるだけです..%gradient%
+      Players:
+        Hover:
+        - |-
+            &b%online%/ %max%
+      Favicon:
+          Files:
+            - toto.png
       Version:
         Name:
         - '0.0.0-9.99.9'
