@@ -7,7 +7,7 @@
 # -------------------- General settings --------------------
 
 #Language setting
-lang: en
+lang: ja
 
 # Whether to enable channel chat function
 enableChannelChat: true
